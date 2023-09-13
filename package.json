@@ -1,0 +1,15 @@
+{
+  "name": "quantum-bank-cms",
+  "packageManager": "yarn@3.6.3",
+  "scripts": {
+    "snapshot:create": "directus schema snapshot ./snapshots/$(date +%F)-snapshot-$(date +%s).yaml"
+  },
+  "devDependencies": {
+    "@types/auth0": "^3.3.4",
+    "directus": "^10.6.1"
+  },
+  "dependencies": {
+    "auth0": "^3.7.0",
+    "mysql": "^2.18.1"
+  }
+}
