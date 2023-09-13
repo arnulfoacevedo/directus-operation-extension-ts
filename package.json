@@ -2,7 +2,8 @@
   "name": "quantum-bank-cms",
   "packageManager": "yarn@3.6.3",
   "scripts": {
-    "snapshot:create": "directus schema snapshot ./snapshots/$(date +%F)-snapshot-$(date +%s).yaml"
+    "snapshot:create": "directus schema snapshot ./snapshots/$(date +%F)-snapshot-$(date +%s).yaml",
+    "snapshot:apply": "directus schema apply"
   },
   "devDependencies": {
     "@types/auth0": "^3.3.4",
