@@ -7,7 +7,7 @@
   },
   "devDependencies": {
     "@types/auth0": "^3.3.4",
-    "directus": "^10.6.1"
+    "directus": "^10.6.3"
   },
   "dependencies": {
     "auth0": "^3.7.0",

@@ -27,7 +27,7 @@ services:
   directus:
     restart: unless-stopped
     env_file: .env
-    image: directus/directus:10.6.1
+    image: directus/directus:10.6.3
     platform: linux/amd64
     ports:
       - 8055:8055
