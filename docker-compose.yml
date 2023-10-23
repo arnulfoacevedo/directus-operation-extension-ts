@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   database:
-    restart: unless-stopped
+    restart: always
     env_file: .env
     image: bitnami/postgresql:15.4.0
     platform: linux/amd64
@@ -25,9 +25,9 @@ services:
       - directus
 
   directus:
-    restart: unless-stopped
+    restart: always
     env_file: .env
-    image: directus/directus:10.6.3
+    image: directus/directus:10.6.4
     platform: linux/amd64
     ports:
       - 8055:8055
@@ -39,19 +39,7 @@ services:
       - cache
       - database
     environment:
-      KEY: ${KEY}
-      SECRET: ${SECRET}
-      DB_CLIENT: ${DB_CLIENT}
-      DB_HOST: database
-      DB_PORT: ${DB_HOST}
-      DB_DATABASE: ${DB_DATABASE}
-      DB_USER: ${DB_USER}
-      DB_PASSWORD: ${DB_PASSWORD}
-      CACHE_ENABLED: ${CACHE_ENABLED}
-      CACHE_STORE: ${CACHE_STORE}
       REDIS: redis://cache:6379
-      ADMIN_EMAIL: ${ADMIN_EMAIL}
-      PUBLIC_URL: ${PUBLIC_URL}
     networks:
       - directus
 

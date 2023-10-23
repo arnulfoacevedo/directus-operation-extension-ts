@@ -2,12 +2,17 @@
   "name": "quantum-bank-cms",
   "packageManager": "yarn@3.6.3",
   "scripts": {
-    "snapshot:create": "directus schema snapshot ./snapshots/$(date +%F)-snapshot-$(date +%s).yaml",
-    "snapshot:apply": "directus schema apply"
+    "snapshot:create": "directus schema snapshot ./snapshots/snapshot.yaml",
+    "snapshot:apply": "directus schema apply",
+    "prod:deploy": "./kubernetes/scripts/deploy.sh",
+    "prod:delete": "./kubernetes/scripts/delete.sh",
+    "prod:redeploy": "./kubernetes/scripts/delete.sh && ./kubernetes/scripts/deploy.sh",
+    "k8s:ui": "minikube dashboard --port=9090 --url",
+    "k8s:restart": "minikube stop && minikube start --driver=docker"
   },
   "devDependencies": {
     "@types/auth0": "^3.3.4",
-    "directus": "^10.6.3"
+    "directus": "^10.6.4"
   },
   "dependencies": {
     "auth0": "^3.7.0",

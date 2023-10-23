@@ -3,3 +3,4 @@
 /.vagrant/
 /.yarn
 /uploads/
+/kubernetes/configs/config-map/secrets/

@@ -1,0 +1,47 @@
+apiVersion: v1
+data:
+  ACCESS_TOKEN_TTL: 15m
+  ASSETS_CACHE_TTL: 30d
+  AUTH_AUTH0_DRIVER: openid
+  AUTH_AUTH0_IDENTIFIER_KEY: email
+  AUTH_PROVIDERS: auth0
+  CACHE_ENABLED: "true"
+  CACHE_STORE: cache.default
+  CORS_ALLOWED_HEADERS: Content-Type,Authorization
+  CORS_CREDENTIALS: "true"
+  CORS_ENABLED: "true"
+  CORS_EXPOSED_HEADERS: Content-Range
+  CORS_MAX_AGE: "18000"
+  CORS_METHODS: GET,POST,PATCH,DELETE
+  CORS_ORIGIN: "true"
+  DB_CLIENT: pg
+  DB_HOST: database.default
+  DB_PORT: "5432"
+  EMAIL_FROM: void-correspondence@quantum-bank.world
+  EMAIL_SENDMAIL_NEW_LINE: unix
+  EMAIL_SENDMAIL_PATH: /usr/sbin/sendmail
+  EMAIL_TRANSPORT: sendmail
+  EXTENSIONS_AUTO_RELOAD: "false"
+  EXTENSIONS_PATH: ./extensions
+  HOST: 0.0.0.0
+  PORT: "8055"
+  PUBLIC_URL: /
+  RATE_LIMITER_DURATION: "1"
+  RATE_LIMITER_ENABLED: "false"
+  RATE_LIMITER_POINTS: "25"
+  RATE_LIMITER_STORE: memory
+  REDIS: redis://cache.default:6379
+  REFRESH_TOKEN_COOKIE_NAME: directus_refresh_token
+  REFRESH_TOKEN_COOKIE_SAME_SITE: lax
+  REFRESH_TOKEN_COOKIE_SECURE: "false"
+  REFRESH_TOKEN_TTL: 7d
+  STORAGE_LOCAL_DRIVER: local
+  STORAGE_LOCAL_ROOT: ./uploads
+  STORAGE_LOCATIONS: local
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  labels:
+    io.kompose.service: config-map
+  name: config-map
+  namespace: default

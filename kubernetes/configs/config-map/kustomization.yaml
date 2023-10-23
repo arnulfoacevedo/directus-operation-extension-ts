@@ -1,0 +1,19 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - config-map.yaml
+
+secretGenerator:
+  - name: db
+    envs:
+      - secrets/.env.db.secret
+  - name: admin
+    envs:
+      - secrets/.env.admin.secret
+  - name: security
+    envs:
+      - secrets/.env.security.secret
+  - name: sso
+    envs:
+      - secrets/.env.sso.secret
