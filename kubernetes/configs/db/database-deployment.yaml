@@ -28,20 +28,20 @@ spec:
     spec:
       containers:
         - env:
-            - name: POSTGRES_DATABASE
+            - name: POSTGRES_DB
               valueFrom:
                 secretKeyRef:
                   key: DB_DATABASE
-                  name: db
-            - name: POSTGRES_PASSWORD
-              valueFrom:
-                secretKeyRef:
-                  key: DB_PASSWORD
                   name: db
             - name: POSTGRES_USER
               valueFrom:
                 secretKeyRef:
                   key: DB_USER
+                  name: db
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  key: DB_PASSWORD
                   name: db
           image: postgis/postgis:16-3.4
           name: database
