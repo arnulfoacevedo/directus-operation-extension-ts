@@ -7,13 +7,12 @@ metadata:
   name: db
 spec:
   capacity:
-    storage: 1Gi
-  volumeMode: Filesystem
+    storage: 8Gi
   accessModes:
-    - ReadWriteOnce
-  storageClassName: standard
+    - ReadWriteMany
+  storageClassName: manual
   hostPath:
-    path: /data
+    path: /Users/tdespenza/Projects/tdespenza/quantum-software/quantum-bank-cms/database
     type: DirectoryOrCreate
 ---
 apiVersion: v1
@@ -27,9 +26,9 @@ metadata:
 spec:
   volumeName: db
   accessModes:
-    - ReadWriteOnce
-  storageClassName: standard
+    - ReadWriteMany
+  storageClassName: manual
   resources:
     requests:
-      storage: 1Gi
+      storage: 8Gi
 status: {}

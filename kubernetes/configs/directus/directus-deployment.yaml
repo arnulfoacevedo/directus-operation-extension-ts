@@ -35,14 +35,14 @@ spec:
                 name: config-map
           - name: ADMIN_EMAIL
             valueFrom:
-              configMapKeyRef:
+              secretKeyRef:
                 key: ADMIN_EMAIL
-                name: config-map
+                name: admin
           - name: ADMIN_PASSWORD
             valueFrom:
-              configMapKeyRef:
+              secretKeyRef:
                 key: ADMIN_PASSWORD
-                name: config-map
+                name: admin
           - name: ASSETS_CACHE_TTL
             valueFrom:
               configMapKeyRef:
@@ -50,14 +50,14 @@ spec:
                 name: config-map
           - name: AUTH_AUTH0_CLIENT_ID
             valueFrom:
-              configMapKeyRef:
+              secretKeyRef:
                 key: AUTH_AUTH0_CLIENT_ID
-                name: config-map
+                name: sso
           - name: AUTH_AUTH0_CLIENT_SECRET
             valueFrom:
-              configMapKeyRef:
+              secretKeyRef:
                 key: AUTH_AUTH0_CLIENT_SECRET
-                name: config-map
+                name: sso
           - name: AUTH_AUTH0_DRIVER
             valueFrom:
               configMapKeyRef:
@@ -70,9 +70,9 @@ spec:
                 name: config-map
           - name: AUTH_AUTH0_ISSUER_URL
             valueFrom:
-              configMapKeyRef:
+              secretKeyRef:
                 key: AUTH_AUTH0_ISSUER_URL
-                name: config-map
+                name: sso
           - name: AUTH_PROVIDERS
             valueFrom:
               configMapKeyRef:
@@ -130,9 +130,9 @@ spec:
                 name: config-map
           - name: DB_DATABASE
             valueFrom:
-              configMapKeyRef:
+              secretKeyRef:
                 key: DB_DATABASE
-                name: config-map
+                name: db
           - name: DB_HOST
             valueFrom:
               configMapKeyRef:
@@ -140,9 +140,9 @@ spec:
                 name: config-map
           - name: DB_PASSWORD
             valueFrom:
-              configMapKeyRef:
+              secretKeyRef:
                 key: DB_PASSWORD
-                name: config-map
+                name: db
           - name: DB_PORT
             valueFrom:
               configMapKeyRef:
@@ -150,9 +150,9 @@ spec:
                 name: config-map
           - name: DB_USER
             valueFrom:
-              configMapKeyRef:
+              secretKeyRef:
                 key: DB_USER
-                name: config-map
+                name: db
           - name: EMAIL_FROM
             valueFrom:
               configMapKeyRef:
@@ -190,9 +190,9 @@ spec:
                 name: config-map
           - name: KEY
             valueFrom:
-              configMapKeyRef:
+              secretKeyRef:
                 key: KEY
-                name: config-map
+                name: security
           - name: PORT
             valueFrom:
               configMapKeyRef:
@@ -250,9 +250,9 @@ spec:
                 name: config-map
           - name: SECRET
             valueFrom:
-              configMapKeyRef:
+              secretKeyRef:
                 key: SECRET
-                name: config-map
+                name: security
           - name: STORAGE_LOCAL_DRIVER
             valueFrom:
               configMapKeyRef:
@@ -268,7 +268,7 @@ spec:
               configMapKeyRef:
                 key: STORAGE_LOCATIONS
                 name: config-map
-          image: directus/directus:10.6.4
+          image: directus/directus:10.7.0
           name: directus
           ports:
             - containerPort: 8055

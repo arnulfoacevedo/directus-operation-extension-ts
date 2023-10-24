@@ -30,19 +30,19 @@ spec:
         - env:
             - name: POSTGRES_DATABASE
               valueFrom:
-                configMapKeyRef:
+                secretKeyRef:
                   key: DB_DATABASE
-                  name: config-map
+                  name: db
             - name: POSTGRES_PASSWORD
               valueFrom:
-                configMapKeyRef:
+                secretKeyRef:
                   key: DB_PASSWORD
-                  name: config-map
+                  name: db
             - name: POSTGRES_USER
               valueFrom:
-                configMapKeyRef:
+                secretKeyRef:
                   key: DB_USER
-                  name: config-map
+                  name: db
           image: postgis/postgis:16-3.4
           name: database
           ports:
