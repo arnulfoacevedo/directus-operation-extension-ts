@@ -1578,21 +1578,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@directus/api@npm:14.0.0":
-  version: 14.0.0
-  resolution: "@directus/api@npm:14.0.0"
+"@directus/api@npm:14.0.2":
+  version: 14.0.2
+  resolution: "@directus/api@npm:14.0.2"
   dependencies:
     "@authenio/samlify-node-xmllint": 2.0.0
     "@aws-sdk/client-ses": 3.332.0
-    "@directus/app": 10.10.0
+    "@directus/app": 10.12.0
     "@directus/constants": 11.0.1
     "@directus/errors": 0.2.0
-    "@directus/extensions": 0.1.0
-    "@directus/extensions-sdk": 10.1.13
+    "@directus/extensions": 0.1.1
+    "@directus/extensions-sdk": 10.1.14
     "@directus/format-title": 10.1.0
     "@directus/pressure": 1.0.12
     "@directus/schema": 11.0.0
-    "@directus/specs": 10.2.0
+    "@directus/specs": 10.2.1
     "@directus/storage": 10.0.7
     "@directus/storage-driver-azure": 10.0.13
     "@directus/storage-driver-cloudinary": 10.0.13
@@ -1707,14 +1707,14 @@ __metadata:
       optional: true
     tedious:
       optional: true
-  checksum: cd9a28da6688fd21f828da8ec45af16a5163495f2ad0a8a80b36cb73a110d9aaed3ae0bf44bea2242467dc98d5246f7ac356a810d06b3235b20f0bab2f35ee3f
+  checksum: 011b342a757519e28c1b02d2066a574fb0afecf8edbcecc202f5e75371c4cfe22f5573f59f2c339e7c810ebb1d5504574583c5970f9f893772136c2084d20ee1
   languageName: node
   linkType: hard
 
-"@directus/app@npm:10.10.0":
-  version: 10.10.0
-  resolution: "@directus/app@npm:10.10.0"
-  checksum: f26f78f0dd5acad0ae9579ae0a61edc53861de0171c157f84235dde390cf8a31d14ea0a4c59b90580722e13e2e004f836bb0a468bbdb1a0564b1bcdaaaaad19a
+"@directus/app@npm:10.12.0":
+  version: 10.12.0
+  resolution: "@directus/app@npm:10.12.0"
+  checksum: 77007c30517a4b48f855001cb78a17628cd6e8dddaffcff3f183630a634c78ac3a670b867a77e4a08e651e1739162c3210d480f147e1775ebea0ade765a4048a
   languageName: node
   linkType: hard
 
@@ -1752,13 +1752,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@directus/extensions-sdk@npm:10.1.13":
-  version: 10.1.13
-  resolution: "@directus/extensions-sdk@npm:10.1.13"
+"@directus/extensions-sdk@npm:10.1.14":
+  version: 10.1.14
+  resolution: "@directus/extensions-sdk@npm:10.1.14"
   dependencies:
     "@directus/composables": 10.1.5
     "@directus/constants": 11.0.1
-    "@directus/extensions": 0.1.0
+    "@directus/extensions": 0.1.1
     "@directus/types": 11.0.1
     "@directus/utils": 11.0.1
     "@rollup/plugin-commonjs": 25.0.0
@@ -1782,20 +1782,20 @@ __metadata:
     vue: 3.3.4
   bin:
     directus-extension: cli.js
-  checksum: c019c35ae853ce27b6fb9511b137de37f57add0dec811d554b11938decd3f81ee7eacc8f62298eac4e38d9d2b59e9a9a2f3d36b27726ee270c3d59bb233e181c
+  checksum: 033d9898cdd539ed0ef416c3c58f8e8fce09d15e53aad29b31457eb13f439757bac832f1dd80da93a430c01d8f4ee47cbc3055a4272408205651245038655ff0
   languageName: node
   linkType: hard
 
-"@directus/extensions@npm:0.1.0":
-  version: 0.1.0
-  resolution: "@directus/extensions@npm:0.1.0"
+"@directus/extensions@npm:0.1.1":
+  version: 0.1.1
+  resolution: "@directus/extensions@npm:0.1.1"
   dependencies:
     "@directus/utils": 11.0.1
     fs-extra: 11.1.1
     lodash-es: 4.17.21
     tmp: 0.2.1
     zod: 3.22.4
-  checksum: ec297b1362fe950b47571b73825217d97892f6312b8b9a5eed2f35f99fab42069b3a61983aa7f812a09d817afe3a5155ea081413f953d4e73aab5c4d43589cd8
+  checksum: 3b7bc5730eac5ea4b97c0b01ba8cd04f0bac5c28a748f63767d866a620e020022be3f61a2cc68fbf627150ad62ef4c9b10677caec92c312e755a0d0f9f5e5fa2
   languageName: node
   linkType: hard
 
@@ -1824,12 +1824,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@directus/specs@npm:10.2.0":
-  version: 10.2.0
-  resolution: "@directus/specs@npm:10.2.0"
+"@directus/specs@npm:10.2.1":
+  version: 10.2.1
+  resolution: "@directus/specs@npm:10.2.1"
   dependencies:
     openapi3-ts: 4.1.2
-  checksum: 75be91fae029778896bb5de2795de0293304055031d76203906223acdeb5ae1128a0d21948295f162d8bae3433cb84dd26cfce0996b542427f4006b48250c2e2
+  checksum: c1333538b4e31c45769bdfd5a22bf8ac09403bdd3eddb233206665c522c820f656fe0e0fe4717bcf9fcd29baec9a3deb2c97d80d187619972cca1b9078a459c1
   languageName: node
   linkType: hard
 
@@ -4725,15 +4725,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"directus@npm:^10.7.0":
-  version: 10.7.0
-  resolution: "directus@npm:10.7.0"
+"directus@npm:^10.7.1":
+  version: 10.7.2
+  resolution: "directus@npm:10.7.2"
   dependencies:
-    "@directus/api": 14.0.0
+    "@directus/api": 14.0.2
     "@directus/update-check": 11.0.3
   bin:
     directus: cli.js
-  checksum: 934fc90f3ccb4813a68d13a8d84dc7395907a0ccd4a1634cd03370972b4610e3c51621d5dfa11ddb2247047a9ec5dc2b350a13ffba07c631d072b5dc2b4667ef
+  checksum: ed88a4a743d854a69ed08b2df3612e82bc31b8c7b4f0de68947c57a2164484e74bedf342e07725049854699d345dde19ce380233f2e1d6203566b65b8835acf8
   languageName: node
   linkType: hard
 
@@ -7693,7 +7693,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mysql@npm:2.18.1, mysql@npm:^2.18.1":
+"mysql@npm:2.18.1":
   version: 2.18.1
   resolution: "mysql@npm:2.18.1"
   dependencies:
@@ -9257,8 +9257,7 @@ __metadata:
   dependencies:
     "@types/auth0": ^3.3.8
     auth0: ^4.0.1
-    directus: ^10.7.0
-    mysql: ^2.18.1
+    directus: ^10.7.1
   languageName: unknown
   linkType: soft
 
