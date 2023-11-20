@@ -10,13 +10,13 @@ generatorOptions:
 secretGenerator:
   - name: db
     envs:
-      - secrets/env-db-secret
+      - secrets/.env.db.secret
   - name: admin
     envs:
-      - secrets/env-admin-secret
+      - secrets/.env.admin.secret
   - name: security
     envs:
-      - secrets/env-security-secret
+      - secrets/.env.security.secret
   - name: sso
     envs:
-      - secrets/env-sso-secret
+      - secrets/env.sso.secret
