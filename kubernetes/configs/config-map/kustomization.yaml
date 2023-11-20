@@ -19,4 +19,4 @@ secretGenerator:
       - secrets/.env.security.secret
   - name: sso
     envs:
-      - secrets/env.sso.secret
+      - secrets/.env.sso.secret
