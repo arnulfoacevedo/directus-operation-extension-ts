@@ -1,6 +1,10 @@
 /.idea/
 /.env
 /.vagrant/
-/.yarn
+/.yarn/cache
+/.yarn/plugins
+/.yarn/install-state.gz
 /uploads/
 /kubernetes/configs/config-map/secrets/
+/dump/
+!/.yarn/releases/

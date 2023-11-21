@@ -33,6 +33,7 @@ Vagrant.configure("2") do |config|
   config.vm.define 'quantum-bank-directus' do |machine|
     machine.vm.hostname = 'local-directus.quantum-bank.world'
     machine.vm.network :private_network, ip: '192.168.61.124'
+    machine.vm.network :forwarded_port, guest: 5432, host: 5432
     machine.vm.network :forwarded_port, guest: 3306, host: 3309
     machine.vm.network :forwarded_port, guest: 8055, host: 8055
     machine.vm.synced_folder './', '/home/vagrant/quantum-bank'
