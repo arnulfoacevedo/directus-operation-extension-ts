@@ -48,36 +48,6 @@ spec:
               configMapKeyRef:
                 key: ASSETS_CACHE_TTL
                 name: config-map
-          - name: AUTH_AUTH0_CLIENT_ID
-            valueFrom:
-              secretKeyRef:
-                key: AUTH_AUTH0_CLIENT_ID
-                name: sso
-          - name: AUTH_AUTH0_CLIENT_SECRET
-            valueFrom:
-              secretKeyRef:
-                key: AUTH_AUTH0_CLIENT_SECRET
-                name: sso
-          - name: AUTH_AUTH0_DRIVER
-            valueFrom:
-              configMapKeyRef:
-                key: AUTH_AUTH0_DRIVER
-                name: config-map
-          - name: AUTH_AUTH0_IDENTIFIER_KEY
-            valueFrom:
-              configMapKeyRef:
-                key: AUTH_AUTH0_IDENTIFIER_KEY
-                name: config-map
-          - name: AUTH_AUTH0_ISSUER_URL
-            valueFrom:
-              secretKeyRef:
-                key: AUTH_AUTH0_ISSUER_URL
-                name: sso
-          - name: AUTH_PROVIDERS
-            valueFrom:
-              configMapKeyRef:
-                key: AUTH_PROVIDERS
-                name: config-map
           - name: CACHE_ENABLED
             valueFrom:
               configMapKeyRef:
@@ -268,7 +238,7 @@ spec:
               configMapKeyRef:
                 key: STORAGE_LOCATIONS
                 name: config-map
-          image: directus/directus:10.7.0
+          image: directus/directus:10.8.1
           name: directus
           ports:
             - containerPort: 8055

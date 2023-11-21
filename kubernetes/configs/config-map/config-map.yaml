@@ -2,9 +2,6 @@ apiVersion: v1
 data:
   ACCESS_TOKEN_TTL: 15m
   ASSETS_CACHE_TTL: 30d
-  AUTH_AUTH0_DRIVER: openid
-  AUTH_AUTH0_IDENTIFIER_KEY: email
-  AUTH_PROVIDERS: auth0
   CACHE_ENABLED: "true"
   CACHE_STORE: cache.default
   CORS_ALLOWED_HEADERS: Content-Type,Authorization
