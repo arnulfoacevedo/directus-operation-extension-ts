@@ -9,7 +9,7 @@ metadata:
 spec:
   accessModes:
     - ReadWriteOnce
-  storageClassName: standard
+  storageClassName: do-block-storage-retain
   resources:
     requests:
       storage: 100Mi
