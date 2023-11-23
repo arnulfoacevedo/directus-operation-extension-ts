@@ -26,6 +26,8 @@ spec:
         io.kompose.network/kubernetes-directus: "true"
         io.kompose.service: directus
     spec:
+      securityContext:
+        fsGroup: 1000
       containers:
         - env:
           - name: ACCESS_TOKEN_TTL
