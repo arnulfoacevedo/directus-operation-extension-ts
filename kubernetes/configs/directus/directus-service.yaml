@@ -12,7 +12,7 @@ metadata:
 spec:
   ports:
     - name: "8055"
-      port: 8055
+      port: 80
       targetPort: 8055
   selector:
     io.kompose.service: directus
