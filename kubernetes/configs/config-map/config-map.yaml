@@ -12,7 +12,7 @@ data:
   CORS_METHODS: GET,POST,PATCH,DELETE
   CORS_ORIGIN: "true"
   DB_CLIENT: pg
-  DB_HOST: database
+  DB_HOST: database.default
   DB_PORT: "5432"
   EMAIL_FROM: void-correspondence@quantum-bank.world
   EMAIL_SENDMAIL_NEW_LINE: unix
