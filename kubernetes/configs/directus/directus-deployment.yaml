@@ -240,7 +240,7 @@ spec:
               configMapKeyRef:
                 key: STORAGE_LOCATIONS
                 name: config-map
-          image: directus/directus:10.8.1
+          image: directus/directus:10.8.2
           name: directus
           ports:
             - containerPort: 8055

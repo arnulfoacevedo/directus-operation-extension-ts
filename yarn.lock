@@ -1578,13 +1578,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@directus/api@npm:14.1.1":
-  version: 14.1.1
-  resolution: "@directus/api@npm:14.1.1"
+"@directus/api@npm:14.1.2":
+  version: 14.1.2
+  resolution: "@directus/api@npm:14.1.2"
   dependencies:
     "@authenio/samlify-node-xmllint": "npm:2.0.0"
     "@aws-sdk/client-ses": "npm:3.332.0"
-    "@directus/app": "npm:10.13.1"
+    "@directus/app": "npm:10.13.2"
     "@directus/constants": "npm:11.0.1"
     "@directus/errors": "npm:0.2.0"
     "@directus/extensions": "npm:0.2.0"
@@ -1592,7 +1592,7 @@ __metadata:
     "@directus/format-title": "npm:10.1.0"
     "@directus/pressure": "npm:1.0.13"
     "@directus/schema": "npm:11.0.0"
-    "@directus/specs": "npm:10.2.3"
+    "@directus/specs": "npm:10.2.4"
     "@directus/storage": "npm:10.0.7"
     "@directus/storage-driver-azure": "npm:10.0.14"
     "@directus/storage-driver-cloudinary": "npm:10.0.14"
@@ -1686,7 +1686,7 @@ __metadata:
     strip-bom-stream: "npm:5.0.0"
     tedious: "npm:16.1.0"
     tinypool: "npm:0.8.1"
-    tsx: "npm:3.12.7"
+    tsx: "npm:4.1.4"
     uuid: "npm:9.0.0"
     uuid-validate: "npm:0.0.3"
     wellknown: "npm:0.5.0"
@@ -1708,14 +1708,14 @@ __metadata:
       optional: true
     tedious:
       optional: true
-  checksum: 5ed2426c544f033d2bbf5dd46fc78152984022d733e55d924e2798b1986cbcd1a9d95bcc9f8c4449b1f75432baeb6130e66296980166f736c226c7a112aa0974
+  checksum: 32ec6ffb4faa90e0b56ed66208b7890ac5848aae6265628d41cab92dbcbe69dd5b4ca4eff929fa804c4b7ef95ee45664ed48291a43868ba0c926275a35c0dd8b
   languageName: node
   linkType: hard
 
-"@directus/app@npm:10.13.1":
-  version: 10.13.1
-  resolution: "@directus/app@npm:10.13.1"
-  checksum: 0b2c6f7f627f471ea5cdd4e430e7ba8dca2a10d27a5d5e3d4acd63358f22ca9d738f0e93357a7dd4a70514df730574f39d832e27c5459c02053c224f54db2744
+"@directus/app@npm:10.13.2":
+  version: 10.13.2
+  resolution: "@directus/app@npm:10.13.2"
+  checksum: a133401858441429ff5856c95e66214f13e544be3be46f9ca9bce55e460910ac0a8e4dcf2a376bdb7668fccdcfdf6d983ba9abb7c8349ccffd13f5bbbd3b01c5
   languageName: node
   linkType: hard
 
@@ -1825,12 +1825,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@directus/specs@npm:10.2.3":
-  version: 10.2.3
-  resolution: "@directus/specs@npm:10.2.3"
+"@directus/specs@npm:10.2.4":
+  version: 10.2.4
+  resolution: "@directus/specs@npm:10.2.4"
   dependencies:
     openapi3-ts: "npm:4.1.2"
-  checksum: a58686cb4c31bdc0198a60c606a33a0b953255b97cfb6582c81b907463b49961d395e8c613becda08db1da6eee50eb2f516a70f7668798f4bbf585f0a908f707
+  checksum: c0e0a99211dd43a28360f562acc4c85bf37e896e616de3bc96888297affaf3d4e64d20845db32d6531ccba9dafb84d82c75ab68c4e1d43137e1311caf0214239
   languageName: node
   linkType: hard
 
@@ -1972,36 +1972,6 @@ __metadata:
     "@directus/utils": "npm:11.0.2"
     joi: "npm:17.9.2"
   checksum: c3910a894b8aa6ad9baeba954e86bae479e1367066ce5fad8d616c58aab4e158aef103fa21bf6d4bf08f9a3cd3e7ac78a16279ec772dea95cab8123a3bc39ca0
-  languageName: node
-  linkType: hard
-
-"@esbuild-kit/cjs-loader@npm:^2.4.2":
-  version: 2.4.2
-  resolution: "@esbuild-kit/cjs-loader@npm:2.4.2"
-  dependencies:
-    "@esbuild-kit/core-utils": "npm:^3.0.0"
-    get-tsconfig: "npm:^4.4.0"
-  checksum: e346e339bfc7eff5c52c270fd0ec06a7f2341b624adfb69f84b7d83f119c35070420906f2761a0b4604e0a0ec90e35eaf12544585476c428ed6d6ee3b250c0fe
-  languageName: node
-  linkType: hard
-
-"@esbuild-kit/core-utils@npm:^3.0.0":
-  version: 3.2.2
-  resolution: "@esbuild-kit/core-utils@npm:3.2.2"
-  dependencies:
-    esbuild: "npm:~0.18.20"
-    source-map-support: "npm:^0.5.21"
-  checksum: b24a184dcb4d1d36655ad5e8029eb4415e36e6d076d122da7e59dcefb0b7eeed861a243875311b7b63ce6d6620da8bb89dfcb119f6dd34902bd87ff74a2ba384
-  languageName: node
-  linkType: hard
-
-"@esbuild-kit/esm-loader@npm:^2.5.5":
-  version: 2.5.5
-  resolution: "@esbuild-kit/esm-loader@npm:2.5.5"
-  dependencies:
-    "@esbuild-kit/core-utils": "npm:^3.0.0"
-    get-tsconfig: "npm:^4.4.0"
-  checksum: 9d4a03ffc937fbec75a8456c3d45d7cdb1a65768416791a5720081753502bc9f485ba27942a46f564b12483b140a8a46c12433a4496430d93e4513e430484ec7
   languageName: node
   linkType: hard
 
@@ -4709,15 +4679,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"directus@npm:^10.8.1":
-  version: 10.8.1
-  resolution: "directus@npm:10.8.1"
+"directus@npm:^10.8.2":
+  version: 10.8.2
+  resolution: "directus@npm:10.8.2"
   dependencies:
-    "@directus/api": "npm:14.1.1"
+    "@directus/api": "npm:14.1.2"
     "@directus/update-check": "npm:11.0.3"
   bin:
     directus: cli.js
-  checksum: 1c7b76110a7d456854e6906a4e348f32d6b3393515217d16f72e457de6f5b6894f5927e4f839a0181b577d86c2033acde550b7bc336b053577ad0f64a1a13221
+  checksum: bfae06f6434d7da80aa977a4228646fb0254b1719b35749decfd8f60771343419627d9b8d6837d26a8aba1c29bfb449ece995d1f524a584e47925dd0f52f1de9
   languageName: node
   linkType: hard
 
@@ -5685,7 +5655,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fsevents@npm:~2.3.2":
+"fsevents@npm:~2.3.2, fsevents@npm:~2.3.3":
   version: 2.3.3
   resolution: "fsevents@npm:2.3.3"
   dependencies:
@@ -5695,7 +5665,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fsevents@patch:fsevents@npm%3A~2.3.2#optional!builtin<compat/fsevents>":
+"fsevents@patch:fsevents@npm%3A~2.3.2#optional!builtin<compat/fsevents>, fsevents@patch:fsevents@npm%3A~2.3.3#optional!builtin<compat/fsevents>":
   version: 2.3.3
   resolution: "fsevents@patch:fsevents@npm%3A2.3.3#optional!builtin<compat/fsevents>::version=2.3.3&hash=df0bf1"
   dependencies:
@@ -5835,12 +5805,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"get-tsconfig@npm:^4.4.0":
-  version: 4.7.0
-  resolution: "get-tsconfig@npm:4.7.0"
+"get-tsconfig@npm:^4.7.2":
+  version: 4.7.2
+  resolution: "get-tsconfig@npm:4.7.2"
   dependencies:
     resolve-pkg-maps: "npm:^1.0.0"
-  checksum: acfa48078ab41728281adee0a2dde1d4f437998291af8f189f7c171a766f45ac5ca1cbc335baf8db118a54acf2eb01e7e075c22d3804990048bbf4b94563681a
+  checksum: f21135848fb5d16012269b7b34b186af7a41824830f8616aba17a15eb4d9e54fdc876833f1e21768395215a826c8145582f5acd594ae2b4de3284d10b38d20f8
   languageName: node
   linkType: hard
 
@@ -9249,7 +9219,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "quantum-bank-cms@workspace:."
   dependencies:
-    directus: "npm:^10.8.1"
+    directus: "npm:^10.8.2"
   languageName: unknown
   linkType: soft
 
@@ -10734,20 +10704,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsx@npm:3.12.7":
-  version: 3.12.7
-  resolution: "tsx@npm:3.12.7"
+"tsx@npm:4.1.4":
+  version: 4.1.4
+  resolution: "tsx@npm:4.1.4"
   dependencies:
-    "@esbuild-kit/cjs-loader": "npm:^2.4.2"
-    "@esbuild-kit/core-utils": "npm:^3.0.0"
-    "@esbuild-kit/esm-loader": "npm:^2.5.5"
-    fsevents: "npm:~2.3.2"
+    esbuild: "npm:~0.18.20"
+    fsevents: "npm:~2.3.3"
+    get-tsconfig: "npm:^4.7.2"
+    source-map-support: "npm:^0.5.21"
   dependenciesMeta:
     fsevents:
       optional: true
   bin:
-    tsx: dist/cli.js
-  checksum: fc126d08a50eb85e09c11acb440cdbc549b1ed61e3d3603c83e45825ca5a9aeeb4bf12e5f6ba0996aa663218cd623bc703cc68b9399b91d7a8e8961bea017bb4
+    tsx: dist/cli.mjs
+  checksum: 00b0a01f6803e42081681ea4fe155215854c71bb3aae3aeeda5db78369e2c8766bd084f266ee34cbe8b45d0125efef1daabe54dbfca2e8bb4f318b1f866c7f6c
   languageName: node
   linkType: hard
 

@@ -12,6 +12,6 @@
     "update:yarn": "yarn set version stable"
   },
   "devDependencies": {
-    "directus": "^10.8.1"
+    "directus": "^10.8.2"
   }
 }

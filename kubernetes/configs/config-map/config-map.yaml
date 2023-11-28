@@ -22,7 +22,7 @@ data:
   EXTENSIONS_PATH: ./extensions
   HOST: 0.0.0.0
   PORT: "8055"
-  PUBLIC_URL: /
+  PUBLIC_URL: https://cms.quantum-bank.world
   RATE_LIMITER_DURATION: "1"
   RATE_LIMITER_ENABLED: "false"
   RATE_LIMITER_POINTS: "25"
