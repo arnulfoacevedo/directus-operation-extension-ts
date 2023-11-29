@@ -1,5 +1,5 @@
 version: 1
-directus: 13.2.0
+directus: 14.1.2
 vendor: postgres
 collections:
   - collection: bullet_point
@@ -23,6 +23,7 @@ collections:
       sort_field: sort
       translations: null
       unarchive_value: draft
+      versioning: false
     schema:
       name: bullet_point
   - collection: cart
@@ -46,6 +47,7 @@ collections:
       sort_field: sort
       translations: null
       unarchive_value: draft
+      versioning: false
     schema:
       name: cart
   - collection: cart_item
@@ -69,6 +71,7 @@ collections:
       sort_field: sort
       translations: null
       unarchive_value: draft
+      versioning: false
     schema:
       name: cart_item
   - collection: closure
@@ -92,6 +95,7 @@ collections:
       sort_field: sort
       translations: null
       unarchive_value: draft
+      versioning: false
     schema:
       name: closure
   - collection: components
@@ -115,6 +119,7 @@ collections:
       sort_field: null
       translations: null
       unarchive_value: null
+      versioning: false
   - collection: data
     meta:
       accountability: all
@@ -136,6 +141,7 @@ collections:
       sort_field: null
       translations: null
       unarchive_value: null
+      versioning: false
   - collection: footer
     meta:
       accountability: all
@@ -157,6 +163,7 @@ collections:
       sort_field: sort
       translations: null
       unarchive_value: draft
+      versioning: false
     schema:
       name: footer
   - collection: gallery
@@ -180,6 +187,7 @@ collections:
       sort_field: null
       translations: null
       unarchive_value: draft
+      versioning: false
     schema:
       name: gallery
   - collection: gallery_files
@@ -203,6 +211,7 @@ collections:
       sort_field: null
       translations: null
       unarchive_value: null
+      versioning: false
     schema:
       name: gallery_files
   - collection: header
@@ -226,6 +235,7 @@ collections:
       sort_field: sort
       translations: null
       unarchive_value: draft
+      versioning: false
     schema:
       name: header
   - collection: header_section
@@ -249,6 +259,7 @@ collections:
       sort_field: null
       translations: null
       unarchive_value: draft
+      versioning: false
     schema:
       name: header_section
   - collection: home
@@ -272,6 +283,7 @@ collections:
       sort_field: null
       translations: null
       unarchive_value: draft
+      versioning: false
     schema:
       name: home
   - collection: knowledge_section
@@ -295,6 +307,7 @@ collections:
       sort_field: sort
       translations: null
       unarchive_value: draft
+      versioning: false
     schema:
       name: knowledge_section
   - collection: knowledge_section_item
@@ -318,6 +331,7 @@ collections:
       sort_field: sort
       translations: null
       unarchive_value: draft
+      versioning: false
     schema:
       name: knowledge_section_item
   - collection: layout
@@ -341,6 +355,7 @@ collections:
       sort_field: null
       translations: null
       unarchive_value: null
+      versioning: false
   - collection: link
     meta:
       accountability: all
@@ -362,6 +377,7 @@ collections:
       sort_field: sort
       translations: null
       unarchive_value: draft
+      versioning: false
     schema:
       name: link
   - collection: menu
@@ -385,31 +401,9 @@ collections:
       sort_field: sort
       translations: null
       unarchive_value: draft
+      versioning: false
     schema:
       name: menu
-  - collection: metal
-    meta:
-      accountability: all
-      archive_app_filter: true
-      archive_field: status
-      archive_value: archived
-      collapse: open
-      collection: metal
-      color: null
-      display_template: "{{name}}\_${{price}}"
-      group: data
-      hidden: false
-      icon: null
-      item_duplication_fields: null
-      note: null
-      preview_url: null
-      singleton: false
-      sort: 4
-      sort_field: sort
-      translations: null
-      unarchive_value: draft
-    schema:
-      name: metal
   - collection: news
     meta:
       accountability: all
@@ -431,6 +425,7 @@ collections:
       sort_field: null
       translations: null
       unarchive_value: draft
+      versioning: false
     schema:
       name: news
   - collection: news_item
@@ -454,6 +449,7 @@ collections:
       sort_field: sort
       translations: null
       unarchive_value: draft
+      versioning: false
     schema:
       name: news_item
   - collection: pages
@@ -477,6 +473,7 @@ collections:
       sort_field: null
       translations: null
       unarchive_value: null
+      versioning: false
   - collection: personnel
     meta:
       accountability: all
@@ -498,8 +495,105 @@ collections:
       sort_field: sort
       translations: null
       unarchive_value: draft
+      versioning: false
     schema:
       name: personnel
+  - collection: product
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: status
+      archive_value: archived
+      collapse: open
+      collection: product
+      color: null
+      display_template: null
+      group: data
+      hidden: false
+      icon: null
+      item_duplication_fields: null
+      note: null
+      preview_url: null
+      singleton: false
+      sort: 4
+      sort_field: sort
+      translations: null
+      unarchive_value: draft
+      versioning: false
+    schema:
+      name: product
+  - collection: product_files
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: product_files
+      color: null
+      display_template: null
+      group: data
+      hidden: true
+      icon: import_export
+      item_duplication_fields: null
+      note: null
+      preview_url: null
+      singleton: false
+      sort: 5
+      sort_field: null
+      translations: null
+      unarchive_value: null
+      versioning: false
+    schema:
+      name: product_files
+  - collection: purchase
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: status
+      archive_value: archived
+      collapse: open
+      collection: purchase
+      color: null
+      display_template: null
+      group: null
+      hidden: false
+      icon: null
+      item_duplication_fields: null
+      note: null
+      preview_url: null
+      singleton: false
+      sort: null
+      sort_field: sort
+      translations: null
+      unarchive_value: draft
+      versioning: false
+    schema:
+      name: purchase
+  - collection: purchase_product
+    meta:
+      accountability: all
+      archive_app_filter: true
+      archive_field: null
+      archive_value: null
+      collapse: open
+      collection: purchase_product
+      color: null
+      display_template: null
+      group: null
+      hidden: true
+      icon: import_export
+      item_duplication_fields: null
+      note: null
+      preview_url: null
+      singleton: false
+      sort: null
+      sort_field: null
+      translations: null
+      unarchive_value: null
+      versioning: false
+    schema:
+      name: purchase_product
   - collection: section_spacer
     meta:
       accountability: all
@@ -521,6 +615,7 @@ collections:
       sort_field: sort
       translations: null
       unarchive_value: draft
+      versioning: false
     schema:
       name: section_spacer
   - collection: service_section
@@ -544,6 +639,7 @@ collections:
       sort_field: sort
       translations: null
       unarchive_value: draft
+      versioning: false
     schema:
       name: service_section
   - collection: services
@@ -567,6 +663,7 @@ collections:
       sort_field: null
       translations: null
       unarchive_value: draft
+      versioning: false
     schema:
       name: services
   - collection: who_we_are
@@ -590,6 +687,7 @@ collections:
       sort_field: null
       translations: null
       unarchive_value: draft
+      versioning: false
     schema:
       name: who_we_are
   - collection: who_we_are_section
@@ -613,6 +711,7 @@ collections:
       sort_field: sort
       translations: null
       unarchive_value: draft
+      versioning: false
     schema:
       name: who_we_are_section
 fields:
@@ -1536,7 +1635,7 @@ fields:
       options: null
       readonly: false
       required: false
-      sort: 11
+      sort: 12
       special: null
       translations: null
       validation: null
@@ -1559,23 +1658,22 @@ fields:
       foreign_key_table: null
       foreign_key_column: null
   - collection: cart_item
-    field: metal
+    field: product
     type: integer
     meta:
       collection: cart_item
       conditions: null
       display: null
       display_options: null
-      field: metal
+      field: product
       group: null
       hidden: false
       interface: select-dropdown-m2o
       note: null
-      options:
-        template: '{{name}}'
+      options: null
       readonly: false
       required: true
-      sort: 9
+      sort: 10
       special:
         - m2o
       translations: null
@@ -1583,7 +1681,7 @@ fields:
       validation_message: null
       width: full
     schema:
-      name: metal
+      name: product
       table: cart_item
       data_type: integer
       default_value: null
@@ -1596,7 +1694,7 @@ fields:
       is_generated: false
       generation_expression: null
       has_auto_increment: false
-      foreign_key_table: metal
+      foreign_key_table: product
       foreign_key_column: id
   - collection: cart_item
     field: quantity
@@ -1615,7 +1713,7 @@ fields:
         min: 1
       readonly: false
       required: true
-      sort: 10
+      sort: 11
       special: null
       translations: null
       validation: null
@@ -6178,456 +6276,6 @@ fields:
       has_auto_increment: false
       foreign_key_table: directus_users
       foreign_key_column: id
-  - collection: metal
-    field: date_created
-    type: timestamp
-    meta:
-      collection: metal
-      conditions: null
-      display: datetime
-      display_options:
-        relative: true
-      field: date_created
-      group: null
-      hidden: true
-      interface: datetime
-      note: null
-      options: null
-      readonly: true
-      required: false
-      sort: 5
-      special:
-        - date-created
-      translations: null
-      validation: null
-      validation_message: null
-      width: half
-    schema:
-      name: date_created
-      table: metal
-      data_type: timestamp with time zone
-      default_value: null
-      max_length: null
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: metal
-    field: date_updated
-    type: timestamp
-    meta:
-      collection: metal
-      conditions: null
-      display: datetime
-      display_options:
-        relative: true
-      field: date_updated
-      group: null
-      hidden: true
-      interface: datetime
-      note: null
-      options: null
-      readonly: true
-      required: false
-      sort: 7
-      special:
-        - date-updated
-      translations: null
-      validation: null
-      validation_message: null
-      width: half
-    schema:
-      name: date_updated
-      table: metal
-      data_type: timestamp with time zone
-      default_value: null
-      max_length: null
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: metal
-    field: id
-    type: integer
-    meta:
-      collection: metal
-      conditions: null
-      display: null
-      display_options: null
-      field: id
-      group: null
-      hidden: true
-      interface: input
-      note: null
-      options: null
-      readonly: true
-      required: false
-      sort: 1
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: id
-      table: metal
-      data_type: integer
-      default_value: nextval('metal_id_seq'::regclass)
-      max_length: null
-      numeric_precision: 32
-      numeric_scale: 0
-      is_nullable: false
-      is_unique: true
-      is_primary_key: true
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: true
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: metal
-    field: image
-    type: uuid
-    meta:
-      collection: metal
-      conditions: null
-      display: null
-      display_options: null
-      field: image
-      group: null
-      hidden: false
-      interface: file-image
-      note: null
-      options: null
-      readonly: false
-      required: true
-      sort: 10
-      special:
-        - file
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: image
-      table: metal
-      data_type: uuid
-      default_value: null
-      max_length: null
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: directus_files
-      foreign_key_column: id
-  - collection: metal
-    field: name
-    type: string
-    meta:
-      collection: metal
-      conditions: null
-      display: null
-      display_options: null
-      field: name
-      group: null
-      hidden: false
-      interface: input
-      note: null
-      options: null
-      readonly: false
-      required: true
-      sort: 8
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: name
-      table: metal
-      data_type: character varying
-      default_value: null
-      max_length: 255
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: metal
-    field: price
-    type: integer
-    meta:
-      collection: metal
-      conditions: null
-      display: null
-      display_options: null
-      field: price
-      group: null
-      hidden: false
-      interface: input
-      note: null
-      options:
-        min: 1
-      readonly: false
-      required: true
-      sort: 11
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: price
-      table: metal
-      data_type: integer
-      default_value: null
-      max_length: null
-      numeric_precision: 32
-      numeric_scale: 0
-      is_nullable: true
-      is_unique: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: metal
-    field: quantity
-    type: integer
-    meta:
-      collection: metal
-      conditions: null
-      display: null
-      display_options: null
-      field: quantity
-      group: null
-      hidden: false
-      interface: input
-      note: null
-      options:
-        min: 0
-      readonly: false
-      required: true
-      sort: 9
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: quantity
-      table: metal
-      data_type: integer
-      default_value: null
-      max_length: null
-      numeric_precision: 32
-      numeric_scale: 0
-      is_nullable: true
-      is_unique: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: metal
-    field: sort
-    type: integer
-    meta:
-      collection: metal
-      conditions: null
-      display: null
-      display_options: null
-      field: sort
-      group: null
-      hidden: true
-      interface: input
-      note: null
-      options: null
-      readonly: false
-      required: false
-      sort: 3
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: sort
-      table: metal
-      data_type: integer
-      default_value: null
-      max_length: null
-      numeric_precision: 32
-      numeric_scale: 0
-      is_nullable: true
-      is_unique: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: metal
-    field: status
-    type: string
-    meta:
-      collection: metal
-      conditions: null
-      display: labels
-      display_options:
-        choices:
-          - text: $t:published
-            value: published
-            foreground: '#FFFFFF'
-            background: var(--primary)
-          - text: $t:draft
-            value: draft
-            foreground: '#18222F'
-            background: '#D3DAE4'
-          - text: $t:archived
-            value: archived
-            foreground: '#FFFFFF'
-            background: var(--warning)
-        showAsDot: true
-      field: status
-      group: null
-      hidden: false
-      interface: select-dropdown
-      note: null
-      options:
-        choices:
-          - text: $t:published
-            value: published
-          - text: $t:draft
-            value: draft
-          - text: $t:archived
-            value: archived
-      readonly: false
-      required: false
-      sort: 2
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: status
-      table: metal
-      data_type: character varying
-      default_value: draft
-      max_length: 255
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: false
-      is_unique: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: metal
-    field: user_created
-    type: uuid
-    meta:
-      collection: metal
-      conditions: null
-      display: user
-      display_options: null
-      field: user_created
-      group: null
-      hidden: true
-      interface: select-dropdown-m2o
-      note: null
-      options:
-        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
-      readonly: true
-      required: false
-      sort: 4
-      special:
-        - user-created
-      translations: null
-      validation: null
-      validation_message: null
-      width: half
-    schema:
-      name: user_created
-      table: metal
-      data_type: uuid
-      default_value: null
-      max_length: null
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: directus_users
-      foreign_key_column: id
-  - collection: metal
-    field: user_updated
-    type: uuid
-    meta:
-      collection: metal
-      conditions: null
-      display: user
-      display_options: null
-      field: user_updated
-      group: null
-      hidden: true
-      interface: select-dropdown-m2o
-      note: null
-      options:
-        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
-      readonly: true
-      required: false
-      sort: 6
-      special:
-        - user-updated
-      translations: null
-      validation: null
-      validation_message: null
-      width: half
-    schema:
-      name: user_updated
-      table: metal
-      data_type: uuid
-      default_value: null
-      max_length: null
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: directus_users
-      foreign_key_column: id
   - collection: news
     field: date_created
     type: timestamp
@@ -8265,6 +7913,1354 @@ fields:
       generation_expression: null
       has_auto_increment: false
       foreign_key_table: directus_users
+      foreign_key_column: id
+  - collection: product
+    field: date_created
+    type: timestamp
+    meta:
+      collection: product
+      conditions: null
+      display: datetime
+      display_options:
+        relative: true
+      field: date_created
+      group: null
+      hidden: true
+      interface: datetime
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: 5
+      special:
+        - date-created
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      name: date_created
+      table: product
+      data_type: timestamp with time zone
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: product
+    field: date_updated
+    type: timestamp
+    meta:
+      collection: product
+      conditions: null
+      display: datetime
+      display_options:
+        relative: true
+      field: date_updated
+      group: null
+      hidden: true
+      interface: datetime
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: 7
+      special:
+        - date-updated
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      name: date_updated
+      table: product
+      data_type: timestamp with time zone
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: product
+    field: gallery
+    type: alias
+    meta:
+      collection: product
+      conditions: null
+      display: null
+      display_options: null
+      field: gallery
+      group: null
+      hidden: false
+      interface: files
+      note: null
+      options:
+        folder: 889bb07e-0d53-41de-8628-3b1fa1bfbfe3
+      readonly: false
+      required: true
+      sort: 14
+      special:
+        - files
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+  - collection: product
+    field: id
+    type: integer
+    meta:
+      collection: product
+      conditions: null
+      display: null
+      display_options: null
+      field: id
+      group: null
+      hidden: true
+      interface: input
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: 1
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: id
+      table: product
+      data_type: integer
+      default_value: nextval('product_id_seq'::regclass)
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: false
+      is_unique: true
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: true
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: product
+    field: image
+    type: uuid
+    meta:
+      collection: product
+      conditions: null
+      display: null
+      display_options: null
+      field: image
+      group: null
+      hidden: false
+      interface: file-image
+      note: null
+      options:
+        folder: 889bb07e-0d53-41de-8628-3b1fa1bfbfe3
+      readonly: false
+      required: true
+      sort: 10
+      special:
+        - file
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: image
+      table: product
+      data_type: uuid
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: directus_files
+      foreign_key_column: id
+  - collection: product
+    field: metal
+    type: string
+    meta:
+      collection: product
+      conditions: null
+      display: null
+      display_options: null
+      field: metal
+      group: null
+      hidden: false
+      interface: select-radio
+      note: null
+      options:
+        choices:
+          - text: ':GOLD.'
+            value: gold
+          - text: ':SILVER.'
+            value: silver
+          - text: ':COPPER.'
+            value: copper
+          - text: ':PLATINUM.'
+            value: platinum
+          - text: ':PALADIUM.'
+            value: paladium
+      readonly: false
+      required: true
+      sort: 13
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: metal
+      table: product
+      data_type: character varying
+      default_value: gold
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: product
+    field: name
+    type: string
+    meta:
+      collection: product
+      conditions: null
+      display: null
+      display_options: null
+      field: name
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: true
+      sort: 8
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: name
+      table: product
+      data_type: character varying
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: product
+    field: price
+    type: integer
+    meta:
+      collection: product
+      conditions: null
+      display: null
+      display_options: null
+      field: price
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options:
+        min: 1
+      readonly: false
+      required: true
+      sort: 11
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: price
+      table: product
+      data_type: integer
+      default_value: 1
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: product
+    field: quantity
+    type: integer
+    meta:
+      collection: product
+      conditions: null
+      display: null
+      display_options: null
+      field: quantity
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options:
+        min: 0
+      readonly: false
+      required: true
+      sort: 9
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: quantity
+      table: product
+      data_type: integer
+      default_value: 0
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: product
+    field: sort
+    type: integer
+    meta:
+      collection: product
+      conditions: null
+      display: null
+      display_options: null
+      field: sort
+      group: null
+      hidden: true
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 3
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: sort
+      table: product
+      data_type: integer
+      default_value: null
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: product
+    field: status
+    type: string
+    meta:
+      collection: product
+      conditions: null
+      display: labels
+      display_options:
+        choices:
+          - text: $t:published
+            value: published
+            foreground: '#FFFFFF'
+            background: var(--theme--primary)
+          - text: $t:draft
+            value: draft
+            foreground: '#18222F'
+            background: '#D3DAE4'
+          - text: $t:archived
+            value: archived
+            foreground: '#FFFFFF'
+            background: var(--theme--warning)
+        showAsDot: true
+      field: status
+      group: null
+      hidden: false
+      interface: select-dropdown
+      note: null
+      options:
+        choices:
+          - text: $t:published
+            value: published
+          - text: $t:draft
+            value: draft
+          - text: $t:archived
+            value: archived
+      readonly: false
+      required: false
+      sort: 2
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: status
+      table: product
+      data_type: character varying
+      default_value: draft
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: false
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: product
+    field: tag
+    type: json
+    meta:
+      collection: product
+      conditions: null
+      display: null
+      display_options: null
+      field: tag
+      group: null
+      hidden: false
+      interface: tags
+      note: null
+      options:
+        alphabetize: true
+      readonly: false
+      required: false
+      sort: 15
+      special:
+        - cast-json
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: tag
+      table: product
+      data_type: json
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: product
+    field: user_created
+    type: uuid
+    meta:
+      collection: product
+      conditions: null
+      display: user
+      display_options: null
+      field: user_created
+      group: null
+      hidden: true
+      interface: select-dropdown-m2o
+      note: null
+      options:
+        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
+      readonly: true
+      required: false
+      sort: 4
+      special:
+        - user-created
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      name: user_created
+      table: product
+      data_type: uuid
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: directus_users
+      foreign_key_column: id
+  - collection: product
+    field: user_updated
+    type: uuid
+    meta:
+      collection: product
+      conditions: null
+      display: user
+      display_options: null
+      field: user_updated
+      group: null
+      hidden: true
+      interface: select-dropdown-m2o
+      note: null
+      options:
+        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
+      readonly: true
+      required: false
+      sort: 6
+      special:
+        - user-updated
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      name: user_updated
+      table: product
+      data_type: uuid
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: directus_users
+      foreign_key_column: id
+  - collection: product
+    field: weight
+    type: string
+    meta:
+      collection: product
+      conditions: null
+      display: null
+      display_options: null
+      field: weight
+      group: null
+      hidden: false
+      interface: select-radio
+      note: null
+      options:
+        choices:
+          - text: ':OUNCE.'
+            value: ounce
+          - text: ':GRAMS.'
+            value: grams
+      readonly: false
+      required: true
+      sort: 12
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: weight
+      table: product
+      data_type: character varying
+      default_value: ounce
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: product_files
+    field: directus_files_id
+    type: uuid
+    meta:
+      collection: product_files
+      conditions: null
+      display: null
+      display_options: null
+      field: directus_files_id
+      group: null
+      hidden: true
+      interface: null
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 3
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: directus_files_id
+      table: product_files
+      data_type: uuid
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: directus_files
+      foreign_key_column: id
+  - collection: product_files
+    field: id
+    type: integer
+    meta:
+      collection: product_files
+      conditions: null
+      display: null
+      display_options: null
+      field: id
+      group: null
+      hidden: true
+      interface: null
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 1
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: id
+      table: product_files
+      data_type: integer
+      default_value: nextval('product_files_id_seq'::regclass)
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: false
+      is_unique: true
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: true
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: product_files
+    field: product_id
+    type: integer
+    meta:
+      collection: product_files
+      conditions: null
+      display: null
+      display_options: null
+      field: product_id
+      group: null
+      hidden: true
+      interface: null
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 2
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: product_id
+      table: product_files
+      data_type: integer
+      default_value: null
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: product
+      foreign_key_column: id
+  - collection: purchase
+    field: complete
+    type: boolean
+    meta:
+      collection: purchase
+      conditions: null
+      display: null
+      display_options: null
+      field: complete
+      group: null
+      hidden: false
+      interface: boolean
+      note: null
+      options: null
+      readonly: false
+      required: true
+      sort: 8
+      special:
+        - cast-boolean
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: complete
+      table: purchase
+      data_type: boolean
+      default_value: false
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: purchase
+    field: date_created
+    type: timestamp
+    meta:
+      collection: purchase
+      conditions: null
+      display: datetime
+      display_options:
+        relative: true
+      field: date_created
+      group: null
+      hidden: true
+      interface: datetime
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: 5
+      special:
+        - date-created
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      name: date_created
+      table: purchase
+      data_type: timestamp with time zone
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: purchase
+    field: date_updated
+    type: timestamp
+    meta:
+      collection: purchase
+      conditions: null
+      display: datetime
+      display_options:
+        relative: true
+      field: date_updated
+      group: null
+      hidden: true
+      interface: datetime
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: 7
+      special:
+        - date-updated
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      name: date_updated
+      table: purchase
+      data_type: timestamp with time zone
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: purchase
+    field: id
+    type: integer
+    meta:
+      collection: purchase
+      conditions: null
+      display: null
+      display_options: null
+      field: id
+      group: null
+      hidden: true
+      interface: input
+      note: null
+      options: null
+      readonly: true
+      required: false
+      sort: 1
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: id
+      table: purchase
+      data_type: integer
+      default_value: nextval('purchase_id_seq'::regclass)
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: false
+      is_unique: true
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: true
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: purchase
+    field: products
+    type: alias
+    meta:
+      collection: purchase
+      conditions: null
+      display: null
+      display_options: null
+      field: products
+      group: null
+      hidden: false
+      interface: list-m2m
+      note: null
+      options:
+        enableCreate: false
+      readonly: false
+      required: true
+      sort: 12
+      special:
+        - m2m
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+  - collection: purchase
+    field: shipping_company
+    type: string
+    meta:
+      collection: purchase
+      conditions: null
+      display: null
+      display_options: null
+      field: shipping_company
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 11
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: shipping_company
+      table: purchase
+      data_type: character varying
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: purchase
+    field: sort
+    type: integer
+    meta:
+      collection: purchase
+      conditions: null
+      display: null
+      display_options: null
+      field: sort
+      group: null
+      hidden: true
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 3
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: sort
+      table: purchase
+      data_type: integer
+      default_value: null
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: purchase
+    field: status
+    type: string
+    meta:
+      collection: purchase
+      conditions: null
+      display: labels
+      display_options:
+        choices:
+          - text: $t:published
+            value: published
+            foreground: '#FFFFFF'
+            background: var(--theme--primary)
+          - text: $t:draft
+            value: draft
+            foreground: '#18222F'
+            background: '#D3DAE4'
+          - text: $t:archived
+            value: archived
+            foreground: '#FFFFFF'
+            background: var(--theme--warning)
+        showAsDot: true
+      field: status
+      group: null
+      hidden: false
+      interface: select-dropdown
+      note: null
+      options:
+        choices:
+          - text: $t:published
+            value: published
+          - text: $t:draft
+            value: draft
+          - text: $t:archived
+            value: archived
+      readonly: false
+      required: false
+      sort: 2
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: status
+      table: purchase
+      data_type: character varying
+      default_value: draft
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: false
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: purchase
+    field: tracking_number
+    type: string
+    meta:
+      collection: purchase
+      conditions: null
+      display: null
+      display_options: null
+      field: tracking_number
+      group: null
+      hidden: false
+      interface: input
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 10
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: tracking_number
+      table: purchase
+      data_type: character varying
+      default_value: null
+      max_length: 255
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: purchase
+    field: user
+    type: uuid
+    meta:
+      collection: purchase
+      conditions: null
+      display: null
+      display_options: null
+      field: user
+      group: null
+      hidden: false
+      interface: select-dropdown-m2o
+      note: null
+      options:
+        enableCreate: false
+      readonly: false
+      required: true
+      sort: 13
+      special:
+        - m2o
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: user
+      table: purchase
+      data_type: uuid
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: directus_users
+      foreign_key_column: id
+  - collection: purchase
+    field: user_created
+    type: uuid
+    meta:
+      collection: purchase
+      conditions: null
+      display: user
+      display_options: null
+      field: user_created
+      group: null
+      hidden: true
+      interface: select-dropdown-m2o
+      note: null
+      options:
+        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
+      readonly: true
+      required: false
+      sort: 4
+      special:
+        - user-created
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      name: user_created
+      table: purchase
+      data_type: uuid
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: directus_users
+      foreign_key_column: id
+  - collection: purchase
+    field: user_updated
+    type: uuid
+    meta:
+      collection: purchase
+      conditions: null
+      display: user
+      display_options: null
+      field: user_updated
+      group: null
+      hidden: true
+      interface: select-dropdown-m2o
+      note: null
+      options:
+        template: '{{avatar.$thumbnail}} {{first_name}} {{last_name}}'
+      readonly: true
+      required: false
+      sort: 6
+      special:
+        - user-updated
+      translations: null
+      validation: null
+      validation_message: null
+      width: half
+    schema:
+      name: user_updated
+      table: purchase
+      data_type: uuid
+      default_value: null
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: directus_users
+      foreign_key_column: id
+  - collection: purchase
+    field: warehousing
+    type: boolean
+    meta:
+      collection: purchase
+      conditions: null
+      display: null
+      display_options: null
+      field: warehousing
+      group: null
+      hidden: false
+      interface: boolean
+      note: null
+      options: null
+      readonly: false
+      required: true
+      sort: 9
+      special:
+        - cast-boolean
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: warehousing
+      table: purchase
+      data_type: boolean
+      default_value: false
+      max_length: null
+      numeric_precision: null
+      numeric_scale: null
+      is_nullable: false
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: purchase_product
+    field: id
+    type: integer
+    meta:
+      collection: purchase_product
+      conditions: null
+      display: null
+      display_options: null
+      field: id
+      group: null
+      hidden: true
+      interface: null
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 1
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: id
+      table: purchase_product
+      data_type: integer
+      default_value: nextval('purchase_product_id_seq'::regclass)
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: false
+      is_unique: true
+      is_primary_key: true
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: true
+      foreign_key_table: null
+      foreign_key_column: null
+  - collection: purchase_product
+    field: product_id
+    type: integer
+    meta:
+      collection: purchase_product
+      conditions: null
+      display: null
+      display_options: null
+      field: product_id
+      group: null
+      hidden: true
+      interface: null
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 3
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: product_id
+      table: purchase_product
+      data_type: integer
+      default_value: null
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: product
+      foreign_key_column: id
+  - collection: purchase_product
+    field: purchase_id
+    type: integer
+    meta:
+      collection: purchase_product
+      conditions: null
+      display: null
+      display_options: null
+      field: purchase_id
+      group: null
+      hidden: true
+      interface: null
+      note: null
+      options: null
+      readonly: false
+      required: false
+      sort: 2
+      special: null
+      translations: null
+      validation: null
+      validation_message: null
+      width: full
+    schema:
+      name: purchase_id
+      table: purchase_product
+      data_type: integer
+      default_value: null
+      max_length: null
+      numeric_precision: 32
+      numeric_scale: 0
+      is_nullable: true
+      is_unique: false
+      is_primary_key: false
+      is_generated: false
+      generation_expression: null
+      has_auto_increment: false
+      foreign_key_table: purchase
       foreign_key_column: id
   - collection: section_spacer
     field: background
@@ -10610,24 +11606,24 @@ relations:
       on_update: NO ACTION
       on_delete: SET NULL
   - collection: cart_item
-    field: metal
-    related_collection: metal
+    field: product
+    related_collection: product
     meta:
       junction_field: null
       many_collection: cart_item
-      many_field: metal
+      many_field: product
       one_allowed_collections: null
-      one_collection: metal
+      one_collection: product
       one_collection_field: null
       one_deselect_action: nullify
       one_field: null
       sort_field: null
     schema:
       table: cart_item
-      column: metal
-      foreign_key_table: metal
+      column: product
+      foreign_key_table: product
       foreign_key_column: id
-      constraint_name: cart_item_metal_foreign
+      constraint_name: cart_item_product_foreign
       on_update: NO ACTION
       on_delete: SET NULL
   - collection: cart_item
@@ -10712,6 +11708,18 @@ relations:
       foreign_key_table: directus_users
       foreign_key_column: id
       constraint_name: closure_user_updated_foreign
+      on_update: NO ACTION
+      on_delete: NO ACTION
+  - collection: directus_settings
+    field: public_favicon
+    related_collection: directus_files
+    meta: null
+    schema:
+      table: directus_settings
+      column: public_favicon
+      foreign_key_table: directus_files
+      foreign_key_column: id
+      constraint_name: directus_settings_public_favicon_foreign
       on_update: NO ACTION
       on_delete: NO ACTION
   - collection: footer
@@ -11386,69 +12394,6 @@ relations:
       constraint_name: menu_user_updated_foreign
       on_update: NO ACTION
       on_delete: NO ACTION
-  - collection: metal
-    field: image
-    related_collection: directus_files
-    meta:
-      junction_field: null
-      many_collection: metal
-      many_field: image
-      one_allowed_collections: null
-      one_collection: directus_files
-      one_collection_field: null
-      one_deselect_action: nullify
-      one_field: null
-      sort_field: null
-    schema:
-      table: metal
-      column: image
-      foreign_key_table: directus_files
-      foreign_key_column: id
-      constraint_name: metal_image_foreign
-      on_update: NO ACTION
-      on_delete: SET NULL
-  - collection: metal
-    field: user_created
-    related_collection: directus_users
-    meta:
-      junction_field: null
-      many_collection: metal
-      many_field: user_created
-      one_allowed_collections: null
-      one_collection: directus_users
-      one_collection_field: null
-      one_deselect_action: nullify
-      one_field: null
-      sort_field: null
-    schema:
-      table: metal
-      column: user_created
-      foreign_key_table: directus_users
-      foreign_key_column: id
-      constraint_name: metal_user_created_foreign
-      on_update: NO ACTION
-      on_delete: NO ACTION
-  - collection: metal
-    field: user_updated
-    related_collection: directus_users
-    meta:
-      junction_field: null
-      many_collection: metal
-      many_field: user_updated
-      one_allowed_collections: null
-      one_collection: directus_users
-      one_collection_field: null
-      one_deselect_action: nullify
-      one_field: null
-      sort_field: null
-    schema:
-      table: metal
-      column: user_updated
-      foreign_key_table: directus_users
-      foreign_key_column: id
-      constraint_name: metal_user_updated_foreign
-      on_update: NO ACTION
-      on_delete: NO ACTION
   - collection: news
     field: user_created
     related_collection: directus_users
@@ -11722,6 +12667,216 @@ relations:
       constraint_name: personnel_user_updated_foreign
       on_update: NO ACTION
       on_delete: NO ACTION
+  - collection: product
+    field: image
+    related_collection: directus_files
+    meta:
+      junction_field: null
+      many_collection: product
+      many_field: image
+      one_allowed_collections: null
+      one_collection: directus_files
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: product
+      column: image
+      foreign_key_table: directus_files
+      foreign_key_column: id
+      constraint_name: product_image_foreign
+      on_update: NO ACTION
+      on_delete: SET NULL
+  - collection: product
+    field: user_created
+    related_collection: directus_users
+    meta:
+      junction_field: null
+      many_collection: product
+      many_field: user_created
+      one_allowed_collections: null
+      one_collection: directus_users
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: product
+      column: user_created
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: product_user_created_foreign
+      on_update: NO ACTION
+      on_delete: NO ACTION
+  - collection: product
+    field: user_updated
+    related_collection: directus_users
+    meta:
+      junction_field: null
+      many_collection: product
+      many_field: user_updated
+      one_allowed_collections: null
+      one_collection: directus_users
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: product
+      column: user_updated
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: product_user_updated_foreign
+      on_update: NO ACTION
+      on_delete: NO ACTION
+  - collection: product_files
+    field: directus_files_id
+    related_collection: directus_files
+    meta:
+      junction_field: product_id
+      many_collection: product_files
+      many_field: directus_files_id
+      one_allowed_collections: null
+      one_collection: directus_files
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: product_files
+      column: directus_files_id
+      foreign_key_table: directus_files
+      foreign_key_column: id
+      constraint_name: product_files_directus_files_id_foreign
+      on_update: NO ACTION
+      on_delete: SET NULL
+  - collection: product_files
+    field: product_id
+    related_collection: product
+    meta:
+      junction_field: directus_files_id
+      many_collection: product_files
+      many_field: product_id
+      one_allowed_collections: null
+      one_collection: product
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: gallery
+      sort_field: null
+    schema:
+      table: product_files
+      column: product_id
+      foreign_key_table: product
+      foreign_key_column: id
+      constraint_name: product_files_product_id_foreign
+      on_update: NO ACTION
+      on_delete: SET NULL
+  - collection: purchase
+    field: user
+    related_collection: directus_users
+    meta:
+      junction_field: null
+      many_collection: purchase
+      many_field: user
+      one_allowed_collections: null
+      one_collection: directus_users
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: purchase
+      column: user
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: purchase_user_foreign
+      on_update: NO ACTION
+      on_delete: SET NULL
+  - collection: purchase
+    field: user_created
+    related_collection: directus_users
+    meta:
+      junction_field: null
+      many_collection: purchase
+      many_field: user_created
+      one_allowed_collections: null
+      one_collection: directus_users
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: purchase
+      column: user_created
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: purchase_user_created_foreign
+      on_update: NO ACTION
+      on_delete: NO ACTION
+  - collection: purchase
+    field: user_updated
+    related_collection: directus_users
+    meta:
+      junction_field: null
+      many_collection: purchase
+      many_field: user_updated
+      one_allowed_collections: null
+      one_collection: directus_users
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: purchase
+      column: user_updated
+      foreign_key_table: directus_users
+      foreign_key_column: id
+      constraint_name: purchase_user_updated_foreign
+      on_update: NO ACTION
+      on_delete: NO ACTION
+  - collection: purchase_product
+    field: product_id
+    related_collection: product
+    meta:
+      junction_field: purchase_id
+      many_collection: purchase_product
+      many_field: product_id
+      one_allowed_collections: null
+      one_collection: product
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: null
+      sort_field: null
+    schema:
+      table: purchase_product
+      column: product_id
+      foreign_key_table: product
+      foreign_key_column: id
+      constraint_name: purchase_product_product_id_foreign
+      on_update: NO ACTION
+      on_delete: SET NULL
+  - collection: purchase_product
+    field: purchase_id
+    related_collection: purchase
+    meta:
+      junction_field: product_id
+      many_collection: purchase_product
+      many_field: purchase_id
+      one_allowed_collections: null
+      one_collection: purchase
+      one_collection_field: null
+      one_deselect_action: nullify
+      one_field: products
+      sort_field: null
+    schema:
+      table: purchase_product
+      column: purchase_id
+      foreign_key_table: purchase
+      foreign_key_column: id
+      constraint_name: purchase_product_purchase_id_foreign
+      on_update: NO ACTION
+      on_delete: SET NULL
   - collection: section_spacer
     field: background
     related_collection: directus_files

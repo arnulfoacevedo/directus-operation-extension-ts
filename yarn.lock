@@ -2661,6 +2661,14 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@quantum-bank/cms@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@quantum-bank/cms@workspace:."
+  dependencies:
+    directus: "npm:^10.8.2"
+  languageName: unknown
+  linkType: soft
+
 "@rollup/plugin-alias@npm:5.0.0":
   version: 5.0.0
   resolution: "@rollup/plugin-alias@npm:5.0.0"
@@ -9214,14 +9222,6 @@ __metadata:
   checksum: 485c990fba7ad17671e16c92715fb064c1600337738f5d140024eb33a49fbc1ed31890d3db850117c760caeb9c9cc9f4ba22a15c20dd119968e41e3d3fe60b28
   languageName: node
   linkType: hard
-
-"quantum-bank-cms@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "quantum-bank-cms@workspace:."
-  dependencies:
-    directus: "npm:^10.8.2"
-  languageName: unknown
-  linkType: soft
 
 "query-string@npm:^7.1.0":
   version: 7.1.3
