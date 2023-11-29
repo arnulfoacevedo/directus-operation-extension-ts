@@ -4,14 +4,14 @@ services:
   database:
     restart: always
     env_file: .env
-    image: bitnami/postgresql:15.4.0
+    image: postgis/postgis:16-3.4
     platform: linux/amd64
     environment:
-      POSTGRESQL_USER: ${DB_USER}
-      POSTGRESQL_PASSWORD: ${DB_PASSWORD}
-      POSTGRESQL_DATABASE: ${DB_DATABASE}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_DATABASE}
     volumes:
-      - db:/bitnami/postgresql
+      - db16:/var/lib/postgresql/data
     ports:
       - '5432:5432'
     networks:
@@ -48,4 +48,4 @@ networks:
     driver: bridge
 
 volumes:
-  db:
+  db16:
