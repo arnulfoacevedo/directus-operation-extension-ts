@@ -25,6 +25,8 @@ spec:
         io.kompose.network/kubernetes-directus: "true"
         io.kompose.service: cache
     spec:
+      securityContext:
+        fsGroup: 999
       containers:
         - image: redis:6
           name: cache
