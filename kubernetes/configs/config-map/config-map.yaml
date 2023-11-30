@@ -15,9 +15,14 @@ data:
   DB_HOST: database.default
   DB_PORT: "5432"
   EMAIL_FROM: void-correspondence@quantum-bank.world
-  EMAIL_SENDMAIL_NEW_LINE: unix
-  EMAIL_SENDMAIL_PATH: /usr/sbin/sendmail
-  EMAIL_TRANSPORT: sendmail
+  EMAIL_TRANSPORT: smtp
+  EMAIL_SMTP_HOST: smtp.protonmail.ch
+  EMAIL_SMTP_NAME: "FOR THE QUANTUM-BANK."
+  EMAIL_SMTP_POOL: "true"
+  EMAIL_SMTP_PORT: "587"
+  EMAIL_SMTP_SECURE: "true"
+  EMAIL_SMTP_IGNORE_TLS: "false"
+  EMAIL_SMTP_USER: postmaster@quantum-bank.world
   EXTENSIONS_AUTO_RELOAD: "false"
   EXTENSIONS_PATH: ./extensions
   HOST: 0.0.0.0

@@ -130,20 +130,45 @@ spec:
               configMapKeyRef:
                 key: EMAIL_FROM
                 name: config-map
-          - name: EMAIL_SENDMAIL_NEW_LINE
-            valueFrom:
-              configMapKeyRef:
-                key: EMAIL_SENDMAIL_NEW_LINE
-                name: config-map
-          - name: EMAIL_SENDMAIL_PATH
-            valueFrom:
-              configMapKeyRef:
-                key: EMAIL_SENDMAIL_PATH
-                name: config-map
           - name: EMAIL_TRANSPORT
             valueFrom:
               configMapKeyRef:
                 key: EMAIL_TRANSPORT
+                name: config-map
+          - name: EMAIL_SMTP_HOST
+            valueFrom:
+              configMapKeyRef:
+                key: EMAIL_SMTP_HOST
+                name: config-map
+          - name: EMAIL_SMTP_NAME
+            valueFrom:
+              configMapKeyRef:
+                key: EMAIL_SMTP_NAME
+                name: config-map
+          - name: EMAIL_SMTP_POOL
+            valueFrom:
+              configMapKeyRef:
+                key: EMAIL_SMTP_POOL
+                name: config-map
+          - name: EMAIL_SMTP_PORT
+            valueFrom:
+              configMapKeyRef:
+                key: EMAIL_SMTP_PORT
+                name: config-map
+          - name: EMAIL_SMTP_SECURE
+            valueFrom:
+              configMapKeyRef:
+                key: EMAIL_SMTP_SECURE
+                name: config-map
+          - name: EMAIL_SMTP_IGNORE_TLS
+            valueFrom:
+              configMapKeyRef:
+                key: EMAIL_SMTP_IGNORE_TLS
+                name: config-map
+          - name: EMAIL_SMTP_USER
+            valueFrom:
+              configMapKeyRef:
+                key: EMAIL_SMTP_USER
                 name: config-map
           - name: EXTENSIONS_AUTO_RELOAD
             valueFrom:
