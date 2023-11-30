@@ -170,6 +170,11 @@ spec:
               configMapKeyRef:
                 key: EMAIL_SMTP_USER
                 name: config-map
+          - name: EMAIL_SMTP_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                key: EMAIL_SMTP_PASSWORD
+                name: smtp
           - name: EXTENSIONS_AUTO_RELOAD
             valueFrom:
               configMapKeyRef:
