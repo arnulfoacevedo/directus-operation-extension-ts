@@ -17,3 +17,6 @@ secretGenerator:
   - name: security
     envs:
       - secrets/.env.security.secret
+  - name: smtp
+    envs:
+      - secrets/.env.smtp.secret
