@@ -284,6 +284,11 @@ spec:
               name: directus-claim1
             - mountPath: /directus/extensions
               name: directus-claim2
+        - name: zerotier-sidecar
+          image: zerotier/zerotier:latest
+          args: ["join", "db64858fed1eabd7"]
+          securityContext:
+            privileged: true
       restartPolicy: Always
       volumes:
         - name: directus-claim0
