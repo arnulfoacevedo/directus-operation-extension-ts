@@ -14,15 +14,15 @@ data:
   DB_CLIENT: pg
   DB_HOST: database.default
   DB_PORT: "5432"
-  EMAIL_FROM: void-correspondence@quantum-bank.world
-  EMAIL_TRANSPORT: smtp
-  EMAIL_SMTP_HOST: smtp.protonmail.ch
+  EMAIL_FROM: "void-correspondence@quantum-bank.world"
+  EMAIL_TRANSPORT: "smtp"
+  EMAIL_SMTP_HOST: "smtp.protonmail.ch"
   EMAIL_SMTP_NAME: "FOR THE QUANTUM-BANK."
   EMAIL_SMTP_POOL: "true"
   EMAIL_SMTP_PORT: "587"
-  EMAIL_SMTP_SECURE: "true"
+  EMAIL_SMTP_SECURE: "false"
   EMAIL_SMTP_IGNORE_TLS: "false"
-  EMAIL_SMTP_USER: postmaster@quantum-bank.world
+  EMAIL_SMTP_USER: "postmaster@quantum-bank.world"
   EXTENSIONS_AUTO_RELOAD: "false"
   EXTENSIONS_PATH: ./extensions
   HOST: 0.0.0.0
