@@ -19,7 +19,7 @@ data:
   EMAIL_SMTP_HOST: "smtp.protonmail.ch"
   EMAIL_SMTP_NAME: "FOR THE QUANTUM-BANK."
   EMAIL_SMTP_POOL: "true"
-  EMAIL_SMTP_PORT: "587"
+  EMAIL_SMTP_PORT: "465"
   EMAIL_SMTP_SECURE: "true"
   EMAIL_SMTP_IGNORE_TLS: "false"
   EMAIL_SMTP_USER: "postmaster@quantum-bank.world"
