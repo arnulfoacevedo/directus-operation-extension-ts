@@ -17,7 +17,7 @@ data:
   EMAIL_VERIFY_SETUP: "true"
   EMAIL_FROM: "postmaster@quantum-bank.world"
   EMAIL_TRANSPORT: "smtp"
-  EMAIL_SMTP_HOST: "smtp.protonmail.ch"
+  EMAIL_SMTP_HOST: "mail.protonmail.ch"
   EMAIL_SMTP_NAME: "QUANTUM-BANK"
   EMAIL_SMTP_POOL: "true"
   EMAIL_SMTP_PORT: "465"
