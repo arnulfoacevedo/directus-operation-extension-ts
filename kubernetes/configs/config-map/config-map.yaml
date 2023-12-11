@@ -18,7 +18,7 @@ data:
   EMAIL_FROM: "void-correspondence@quantum-bank.world"
   EMAIL_TRANSPORT: "smtp"
   EMAIL_SMTP_HOST: "smtp.protonmail.ch"
-  EMAIL_SMTP_NAME: "QUANTUM-BANK"
+  EMAIL_SMTP_NAME: ":QUANTUM-BANK"
   EMAIL_SMTP_POOL: "true"
   EMAIL_SMTP_PORT: "465"
   EMAIL_SMTP_SECURE: "true"
