@@ -3,6 +3,8 @@ data:
   ACCESS_TOKEN_TTL: 15m
   ASSETS_CACHE_TTL: 30d
   CACHE_ENABLED: "true"
+  CACHE_AUTO_PURGE: "true"
+  CACHE_AUTO_PURGE_IGNORE_LIST: "directus_activity,directus_presets"
   CACHE_STORE: cache.default
   CORS_ALLOWED_HEADERS: Content-Type,Authorization
   CORS_CREDENTIALS: "true"
