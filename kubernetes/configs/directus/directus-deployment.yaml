@@ -60,6 +60,16 @@ spec:
               configMapKeyRef:
                 key: CACHE_STORE
                 name: config-map
+          - name: CACHE_AUTO_PURGE
+            valueFrom:
+              configMapKeyRef:
+                key: CACHE_AUTO_PURGE
+                name: config-map
+          - name: CACHE_AUTO_PURGE_IGNORE_LIST
+            valueFrom:
+              configMapKeyRef:
+                key: CACHE_AUTO_PURGE_IGNORE_LIST
+                name: config-map
           - name: CORS_ALLOWED_HEADERS
             valueFrom:
               configMapKeyRef:
